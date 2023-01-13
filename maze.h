@@ -1,7 +1,12 @@
 #include <iostream>
 #include <cstdlib>
+#include <conio.h>
 using namespace std;
 #define N 8
+#define UP 72
+#define DOWN 80
+#define LEFT 75
+#define RIGHT 77
 
 //My very first maze (Rat in the maze)
 
@@ -27,6 +32,7 @@ maze createMaze(); //Setup a maze
 void setBlocks(maze *); //Set blocks (simple blocks)
 void setMark(maze *); //Set mark (represented by 1)
 void displayMaze(maze *); //Display the maze
+void moveRat(maze *); //Move the rat
 
 maze createMaze() {
     //Create dynamacilly a square matrix of degree N
@@ -99,4 +105,8 @@ void displayMaze(maze* m) {
         }
         cout << endl;
     }
+}
+
+void moveRat(maze *m) {
+    int c = 0;
 }
